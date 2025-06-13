@@ -481,6 +481,18 @@
 	  color: #666;
 	  font-style: normal;
 	}
+	.caption-overlay {
+		position: absolute;
+		top: 8px;
+		left: 12px;
+		background-color: rgba(0, 0, 0, 0.65);
+		color: #fff;
+		padding: 4px 8px;
+		font-size: 0.9rem;
+		font-weight: 500;
+		border-radius: 6px;
+		pointer-events: none;
+	}
   </style>
 
 		
@@ -525,6 +537,12 @@
 					<button class="nav-link " id="day4-tab" data-bs-toggle="tab" data-bs-target="#day4" type="button"
 						role="tab" aria-controls="day4" aria-selected="false">Thursday, June 26</button>
 				</li>
+
+				<li class="nav-item" role="presentation">
+					<button class="nav-link " id="full_program-tab" data-bs-toggle="tab" data-bs-target="#full_program" type="button"
+						role="tab" aria-controls="full_program" aria-selected="false">Full Program</button>
+				</li>
+
 			</ul>
 			<div class="tab-content" id="program-content">
 				
@@ -672,19 +690,6 @@
 						</ul>
 					</div>
 					
-					<!-- TO APPLY
-					<section class="session" id="VERDI_1">
-						<h2>VERDI 1: Opening and Keynote</h2>
-						<h3><i class="location-time">Aula A (Centro Congressi), <time datetime="2025-06-23T09:00">9:00 - 10:30</time>, June 23</i></h3>
-						<ul class="speakers">
-						  <li class="session-chair">Session Chair: Behrooz Sangchoolie, RISE Research Institutes of Sweden, Sweden</li>
-						  <li class="title">Welcome to VERDI 2025</li>
-						  <li class="speaker">Behrooz Sangchoolie (RISE Research Institutes of Sweden, Sweden), David Pereira (VORTEX CoLab, Portugal), José Proença (CISTER, Faculty of Sciences, University of Porto, Portugal)</li>
-						  <li class="title">Keynote: Graphical Security Models and Their Applications</li>
-						  <li class="speaker">Dan Dongseong Kim, University of Queensland, Australia</li>
-						</ul>
-					  </section>
-					-->
 					<div class="session" id="VERDI_2">
 						<h6>VERDI 2: Autonomous Vehicles at <i>Aula A (Centro Congressi), 11:00 - 12:30, June 23</i></h6>
 						<ul>
@@ -1057,7 +1062,7 @@
 					</div>
 					
 					<div class="session" id="RS4">
-						<h6>RS4: Voice and UAV Security, at <i>Catalana (Royal), 14:00 - 15:30, June 25</i></h6>
+						<h6>RS4: Voice and UAV Security, at <i>Catalana (Royal), 14:00 - 15:30, June 24</i></h6>
 						<p><b>Session Chair:</b> Saurabh Bagchi (Purdue University, USA)</p>
 						<ul>
 							<li><b>LiveGuard: Voice Liveness Detection via Wavelet Scattering Transform and Mel Spectrogram Scaling</b> by Liqun Shan, Xingli Zhang, Md Imran Hossen, Xiali Hei (University of Louisiana at Lafayette)</li>
@@ -1067,7 +1072,7 @@
 					</div>
 
 					<div class="session" id="RS5">
-						<h6>RS5: Blockchains and Federated Learning, at <i>Aula Magna (Centro Congressi), 16:00 - 17:30, June 25</i></h6>
+						<h6>RS5: Blockchains and Federated Learning, at <i>Aula Magna (Centro Congressi), 16:00 - 17:30, June 24</i></h6>
 						<p><b>Session Chair:</b> Sara Bouchenak (Institut National des Sciences Appliquées (INSA) Lyon, France)</p>
 						<ul>
 							<li><b>PhishingHook: Catching Phishing Ethereum Smart Contracts leveraging EVM Opcodes</b> by Pasquale De Rosa, Simon Queyrut (University of Neuchâtel, Switzerland); Yérom-David Bromberg (University of Rennes, INRIA, France); Pascal Felber, Valerio Schiavoni (University of Neuchâtel, Switzerland)</li>
@@ -1078,7 +1083,7 @@
 					</div>
 					
 					<div class="session" id="RS6">
-						<h6>RS6: Architecture Evaluation, at <i>Aula B (Centro Congressi), 16:00 - 17:30, June 25</i></h6>
+						<h6>RS6: Architecture Evaluation, at <i>Aula B (Centro Congressi), 16:00 - 17:30, June 24</i></h6>
 						<p><b>Session Chair:</b> Hiroshi Yamada (Tokyo University of Agriculture and Technology (TUAT), Japan)</p>
 						<ul>
 							<li><b>EasyDRAM: An FPGA-based Infrastructure for Fast and Accurate End-to-End Evaluation of Emerging DRAM Techniques</b> by Oğuzhan Canpolat (TOBB ETÜ and ETH Zurich); Ataberk Olgun (ETH Zurich); David Novo (LIRMM, Univ Montpellier, CNRS); Oguz Ergin (University of Sharjah and TOBB ETÜ); Onur Mutlu (ETH Zurich)</li>
@@ -1088,7 +1093,7 @@
 					</div>
 					
 					<div class="session" id="RS7">
-						<h6>RS7: IoT and Smart Homes, at <i>Catalana (Royal), 16:00 - 17:30, June 25</i></h6>
+						<h6>RS7: IoT and Smart Homes, at <i>Catalana (Royal), 16:00 - 17:30, June 24</i></h6>
 						<p><b>Session Chair:</b> Kenji Kono (Keio University, Japan)</p>
 						<ul>
 							<li><b>On Security Vulnerabilities in Transportation IoT Devices</b> by Jason Yih (College of Computer, Mathematical, and Natural Sciences; University of Maryland, College Park, MD); Katerina Goseva-Popstojanova (Lane Department of Computer Science and Electrical Engineering; West Virginia University, Morgantown, WV); Michel Cukier (Department of Mechanical Engineering, University of Maryland, College Park, MD)</li>
@@ -1710,6 +1715,743 @@
                     
 				</div>
 
+				<div class="tab-pane fade " id="full_program" role="tabpanel" aria-labelledby="full_program-tab">
+
+					<h3>Monday, June 23</h3>
+					<hr>
+					<div class="session" id="VERDI_1">
+						<h6>VERDI 1: Opening and Keynote at <i>Aula A (Centro Congressi), 9:00 - 10:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Behrooz Sangchoolie, RISE Research Institutes of Sweden, Sweden</li>
+							<li><b>Welcome to VERDI 2025</b> by Behrooz Sangchoolie (RISE Research Institutes of Sweden, Sweden), David Pereira (VORTEX CoLab, Portugal), José Proença (CISTER, Faculty of Sciences, University of Porto, Portugal)</li>
+							<li><b>Keynote: Graphical Security Models and Their Applications</b> by Dan Dongseong Kim, University of Queensland, Australia</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="VERDI_2">
+						<h6>VERDI 2: Autonomous Vehicles at <i>Aula A (Centro Congressi), 11:00 - 12:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> David Pereira, VORTEX CoLab, Portugal</li>
+							<li><b>A Hybrid Cybersecurity Assessment Framework for Unmanned Aircraft Vehicles Based on IMECA and Penetration Testing</b> by Artem Abakumov, Vyacheslav Kharchenko (National Aerospace University KhAI, Kharkiv, Ukraine), Peter Popov (City St George’s, University of London, United Kingdom)</li>
+							<li><b>Refining Environmental Requirements for Autonomous Driving Systems: Leveraging the FRAV Framework</b> by Mahwish Kundi (Maynooth University, Ireland), Faraz Ahmad (Abdul Wali Khan University Mardan, Pakistan), Rosemary Monahan (Maynooth University, Ireland)</li>
+							<li><b>Safety-Centric Architecture for AI-Enabled Autonomous Driving Systems</b> by Jatin Arora (VORTEX CoLab and CISTER, ISEP, Portugal), Alexandre Esper (Capgemini Engineering, Porto, Portugal), Vasco Santos (VORTEX CoLab, Portugal)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="VERDI_3">
+						<h6>VERDI 3: Logical Reasoning at <i>Aula A (Centro Congressi), 14:00 - 15:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Raul Barbosa, University of Coimbra, Portugal</li>
+							<li><b>Model-driven, logic-supported exploratory dependability analysis</b> by András Földvári (Budapest University of Technology and Economics, Hungary), András Pataricza (Budapest University of Technology and Economics, Hungary)</li>
+							<li><b>Enhancing Cyber-Physical System Dependability via Synthesis: Challenges and Future Directions</b> by Max Taylor (Idaho National Laboratory, United States), Arthur Amorim (The University of Central Florida, United States)</li>
+							<li><b>Reasoning with Happens-Before Relations about Concurrent Programs in the Theta Framework</b> by Csanád Telbisz, Levente Bajczi, Dániel Szekeres, András Vörös, István Majzik (Budapest University of Technology and Economics, Hungary)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="VERDI_4">
+						<h6>VERDI 4: AI for V&amp;V at <i>Aula A (Centro Congressi), 16:00 - 17:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Peter Popov, City St George’s, University of London, United Kingdom</li>
+							<li><b>Dependability Assurance with Symbolic Reasoning in LLM-enabled Systems</b> by András Gergely Deé-Lukács, András Földvári (Budapest University of Technology and Economics, Hungary)</li>
+							<li><b>Program Verification for Rigorous Analysis of Decision Tree Ensembles against Specifications</b> by Iat Tou Leong (University of Coimbra, CISUC, Portugal), Aleksandar Avdalovic (Louisiana State University, United States), Raul Barbosa (University of Coimbra, CISUC, Portugal)</li>
+							<li><b>DURA‑CPS: A Multi‑Role Orchestrator for Dependability Assurance in LLM‑Enabled Cyber‑Physical Systems</b> by Trisanth Srinivasan (Department of AI Deployment and Safety, Cyrion Labs, United States), Santosh Patapati (Molecular Engineering & Sciences Institute, University of Washington, United States), Himani Musku (School of Computer Science, Carnegie Mellon University, United States), Idhant Gode (College of Engineering, Cornell University, United States), Aditya Arora (ACM AI, University of California San Diego, United States), Samvit Bhattacharya (Department of R&D, Cyrion Labs, United States), Abubakr Nazriev (Sentinel DE, University of Montana, United States), Sanika Hirave (Dept. of Computer Science & Engineering, Oakland University, United States), Zaryab Kanjiani (Dyson AEM, Cornell University, United States), Srinjoy Ghose (School of Science, University of North Texas, United States)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="DSML_1">
+						<h6>DSML 1: Keynote Talk 1 at <i>Aula B (Centro Congressi), 9:00 - 10:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Xugui Zhou, Louisiana State University</li>
+							<li>Welcome words</li>
+							<li><b>Keynote: Dependability and Security of Machine Learning: Old Wine in a New Bottle or Not?</b> by Karthik Pattabiraman, University of British Columbia</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="DSML_2">
+						<h6>DSML 2: Adversarial Machine Learning and Defenses at <i>Aula B (Centro Congressi), 11:00 - 12:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Zhengping Jay Luo, Rider University</li>
+							<li><b>Revisiting Adversarial Perception Attacks and Defense Methods on Autonomous Driving Systems</b> by Cheng Chen, Yuhong Wang, Nafis S Munir, Xiangwei Zhou, Xugui Zhou (Louisiana State University)</li>
+							<li><b>On the Transferability of Adversarial Attacks from Convolutional Neural Networks to Variants of ChatGPT4</b> by Niklas Bunzel (Fraunhofer Institute for Secure Information Technology)</li>
+							<li><b>Learning from the Good Ones: Risk Profiling-Based Defenses Against Evasion Attacks on DNNs</b> by Mohammed Elnawawy, Gargi Mitra (University of British Columbia), Shahrear Iqbal (National Research Council Canada), Karthik Pattabiraman (University of British Columbia)</li>
+							<li><b>Audio Jailbreak Attacks: Exposing Vulnerabilities in SpeechGPT in a White-Box Framework</b> by Binhao Ma (University of Missouri-Kansas City), Hanqing Guo (University of Hawaii at Mānoa), Zhengping Jay Luo (Rider University), Rui Duan (University of Missouri-Kansas City)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="DSML_3">
+						<h6>DSML 3: Keynote Talk 2 at <i>Aula B (Centro Congressi), 14:00 - 15:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Niklas Bunzel (Fraunhofer Institute for Secure Information Technology)</li>
+							<li><b>Keynote: Securing the Machine Learning Components of Autonomous Vehicles: Risk Assessment and Mitigation</b> by Evgenia Smirni, Chair and Sidney P. Chockley Professor, Computer Science, College of William and Mary, USA</li>
+							<li><b>FHE ML Tuxedo: A Tailored Wrapper Architecture for Homomorphic Encryption in Machine Learning</b> by Martin Nocker, Linus Henke, Pascal Schöttle (Josef Ressel Centre for Security Analysis of IoT Devices, MCI The Entrepreneurial School, Innsbruck, Austria)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="DSML_4">
+						<h6>DSML 4: Trust and Vulnerabilities in Generative AI Systems at <i>Aula B (Centro Congressi), 16:00 - 17:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i>Karthik Pattabiraman (University of British Columbia)</li>
+							<li><b>Hallucination Detection in LLMs via Beam Search Sampling and Semantic Consistency Analysis</b> by Radouane Bouchekir (fortiss GmbH), Fathiyeh Faghih (fortiss GmbH), Tewodros Beyene (fortiss GmbH)</li>
+							<li><b>Securing AI Code Generation Through Automated Pattern-Based Patching</b> by Francesco Altiero, Domenico Cotroneo, Roberta De Luca, Pietro Liguori (Università degli Studi di Napoli Federico)</li>
+							<li><b>Decoding Neighborhood Environments with Large Language Models</b> by Andrew Cart, Shaohu Zhang, Melanie Escue, Xugui Zhou, Haitao Zhao, Prashanth BusiReddyGari (University of North Carolina at Pembroke), Beiyu Lin (University of Oklahoma), Shuang Li (North Carolina A&T State University)</li>
+							<li><b>A Lightweight Reputation-Based Mechanism for Incentivizing Cooperation in Decentralized Federated Learning</b> by Kavindu Bagchi, Suraj Mahangade, Saurabh Bagchi (Purdue University)</li>
+							<li><b>Closing Remarks</b></li>
+						</ul>
+					</div>
+
+					
+					<div class="session" id="DT4DRS_1">
+						<h6>DT4DRS 1: Opening at <i>Sveva (Royal), 9:00 - 10:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chairs:</i> Alessandra Somma, Alessandra De Benedictis, University of Naples Federico II</li>
+							<li><b>Keynote: Digital Twins for Trustworthy Autonomy</b> by Prof. Francesco Flammini, University of Florence</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="DT4DRS_2">
+						<h6>DT4DRS 2: Digital Twins for Environment Management and Urban Mobility Safety at <i>Sveva (Royal), 11:00 - 12:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Alessandra Somma, University of Naples Federico II</li>
+							<li><b>An Architectural Framework for Urban Digital Twin Design: a Case Study on Hydrogeological Risk Management</b> by Angelo Martella, Antonella Longo, Cristian Martella, Marco Zappatore, Francesca Miccoli (Università del Salento, Italy)</li>
+							<li><b>An Integrated Digital Twin Architecture for Real-Time Urban Air Quality Management</b> by Manoj Herath, Hrishikesh Dutta, Roberto Minerva, Noël Crespi, Maira Alvi, Syed Raza (Telecom SudParis, France)</li>
+							<li><b>A Digital Twin Approach to Autonomous Emergency Braking: HiL Testing with Raspberry Pi and Standardized Scenarios</b> by Roland Nagy, Árpád Török (Budapest University of Technology and Economics, Hungary)</li>
+							<li><b>Network and Vehicle Digital Twins for Hardware-in-the-Loop Simulation of C-ITS Applications</b> by Andrea Marchetta (University Federico II of Naples, Italy), Tamás Márton Kazár (Budapest University of Technology and Economics, Hungary), Marcello Cinque (University Federico II of Naples, Italy), Angelo Coppola (University Federico II of Naples, Italy), Zsombor Pethő (Budapest University of Technology and Economics, Hungary), Zsolt Szalay (Budapest University of Technology and Economics, Hungary), and Árpád Török (Budapest University of Technology and Economics, Hungary)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="DT4DRS_3">
+						<h6>DT4DRS 3: Resilient and Secure Infrastructures through Digital Twins at <i>Sveva (Royal), 14:00 - 15:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Alessandra De Benedictis, University of Naples Federico II</li>
+							<li><b>A Digital Twin Network for Proactive Security: The Smart Grid Use-Case</b> by Biagio Boi, Christian Esposito (Università di Salerno, Italy)</li>
+							<li><b>A Model-based Approach for Cybersecurity Assessment of Off-Road and Defense Vehicles</b> by Umberto Bellini (Università di Trento, Italy), Marzieh Kordi (IMT School for Advanced Studies, Italy), Bruno Crispo (Università di Trento, Italy), Paolo Lollini (Università degli Studi di Firenze, Italy), Andrea Bondavalli (Università degli Studi di Firenze), and Davide Compar (IDV, Italy)</li>
+							<li><b>Using Digital Twins as an Upgrade Path for Critical Infrastructure Control Systems</b> by Huzaifah Nadeem, Amy Babay (University of Pittsburgh, USA)</li>
+							<li><b>Toward Predictive Diagnostics: Real-Time Digital Twin for Electric Vehicle Power Systems</b> by Emil Nagy, Dávid Tollner (Budapest University of Technology and Economics, Hungary), József Pázmány (Jaguar Land Rover Hungary Kft., Hungary), Árpád Török (Budapest University of Technology and Economics, Hungary)</li>
+							<li><b>Closing</b></li>
+						</ul>
+					</div>
+					
+					<div class="session" id="EnvSys_1">
+						<h6>EnvSys 1: Opening at <i>Santa Lucia (Royal), 9:00 - 10:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Wen-Ping Tsai National Cheng Kung University)</li>
+							<li>Ice-breaking activities</li>
+							<li><b>Keynote: The Power of On-line Indirect Surveys to Monitor Society</b> by Antonio Fernández Anta (IMDEA), Nicolas Nicolaou (Algolysis Ltd), Efstathios Stavrakis (Algolysis Ltd)</li>
+							<li><b>Invited Talk: Flood Resilience through Hybrid Deep Learning: Optimizing Taipei’s Urban Drainage System </b> by Fi-John Chang (National Taiwan University)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="EnvSys_2">
+						<h6>EnvSys 2: Full Papers Session at <i>Santa Lucia (Royal), 11:00 - 12:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Lewis Tseng (UMass Lowell)</li>
+							<li><b>Weather Impact Analysis for UAV-based Deforestation Monitoring Systems</b> by Tasfia Nuzhat, Fumio Machida (University of Tsukuba), Ermeson Andrade (Federal Rural University of Pernambuco)</li>
+							<li><b>Federated Learning-Based Approach for Landslide Prediction – The Case Study in Taiwan</b> by Po-Wu Cheng, Wen-Ping Tsai (National Cheng Kung University)</li>
+							<li><b>Beyond Control: Embracing Emergent Behavior in Symbiotic Digital Twin and CPS Ecosystems</b> by Andrea Garbugli, Paolo Bellavista, Armir Bujari (University of Bologna)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="EnvSys_3">
+						<h6>EnvSys 3: Tutorial and Short Papers Session at <i>Santa Lucia (Royal), 14:00 - 15:30, June 23</i></h6>
+						<ul>
+							<li><i>Session Chair:</i> Wen-Ping Tsai National Cheng Kung University)</li>
+							<li><b>Tutorial: Water Sustainability and Computing</b> by Wen-Ping Tsai (National Cheng Kung University), Lewis Tseng (UMass Lowell)</li>
+							<li><b>Risk Assessment and Adaptive Management: Integrating LSTM-Based Groundwater Forecasting for Climate-Driven Water Resource Planning</b> by Pei Ju Tsang, Wen-Ping Tsai (National Cheng Kung University)</li>
+							<li><b>Experience: Evaluating Real-time Drone OS under Extreme and Adversarial Environment</b> by Vina Dang, Layann Shaban, Lewis Tseng (UMass Lowell)</li>
+							<li><b>Roundtable discussion and conclusion</b></li>
+						</ul>
+					</div>
+					
+					<div class="session" id="AxC_1">
+						<h6>AxC 1: Keynote Talks at <i>Catalana (Royal), 9:00 - 10:30, June 23</i></h6>
+						<ul>
+							
+							<li><b>Keynote: Architectural-Level Approximate Accelerator Synthesis: Techniques, Challenges, and Future Directions</b> by Muhammad Awais, Paderborn University, Germany</li>
+							<li><b>Keynote: Low Cost Protection of Streaming Data with Approximate Block Sums</b> by Somayeh Sadeghi Kohan, Paderborn University, Germany</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="AxC_2">
+						<h6>AxC 2: Precision Meets Pragmatism: Approximating for Efficiency in AI at <i>Catalana (Royal), 11:00 - 12:30, June 23</i></h6>
+						<ul>
+							
+							<li><b>On the resilience of INT8 Quantized Neural Networks on Low-Power RISC-V Devices</b> by Antonio Porsia, Giacomo Perlo, Annachiara Ruospo, Ernesto Sanchez (Politecnico di Torino)</li>	
+							<li><b>A Margin Based Early-Stopping Approach for Random Forest classifiers</b> by Mario Barbareschi, Antonio Emmanuele (University of Naples Federico II)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="AxC_3">
+						<h6>AxC 3: Optimized Circuits and Computation: Reliability, Health, and Energy Efficiency at <i>Catalana (Royal), 14:00 - 15:30, June 23</i></h6>
+						<ul>
+							
+							<li><b>XMULT: An Energy-Efficient Design of Approximate Multiplier</b> by Ahsan Rafiq, Maksim Jenihhin (Tallinn University of Technology, Estonia)</li>
+							<li><b>Deep&amp;Wide: Achieving Area Efficiency in Scalable Approximate Accelerators</b> by Farjana Jalil, Qazi Arbab Ahmed, Hassan Ghasemzadeh Mohammadi, Thorsten Jungeblut (Bielefeld University of Applied Sciences and Arts), Muhammad Awais, Marco Platzner (Paderborn University), Reneo Group GmbH</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="AxC_4">
+						<h6>AxC 4: Keynote Talk at <i>Catalana (Royal), 16:00 - 17:30, June 23</i></h6>
+						<ul>
+							<li><b>Keynote: Approximate and Stochastic Ising Machines</b> by Jie Han, University of Alberta, Canada</li>
+						</ul>
+					</div>
+
+					<div class="session" id="T1">
+						<h6>Tutorial 1: at <i>Aragonese (Royal), 09:00 - 12:30, June 23</i></h6>
+						<ul>
+							<li><b>Generative AI in Cybersecurity: Generating Offensive Code from Natural Language</b> by Pietro Liguori, Roberto Natella, Domenico Cotroneo (Università degli Studi di Napoli Federico II, Italy)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="T2">
+						<h6>Tutorial 2: at <i>Angioina (Royal), 09:00 - 12:30, June 23</i></h6>
+						<ul>
+							<li><b>Model-based Qualitative Dependability and Security Evaluation</b> by András Földvári, András Pataricza (Budapest University of Technology and Economics, Hungary)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="T3">
+						<h6>Tutorial 3: at <i>Capuana (Royal), 09:00 - 12:30, June 23</i></h6>
+						<ul>
+							<li><b>Evaluating Blockchain Fault Tolerance with STABL</b> by Vincent Gramoli (University of Sydney and Redbelly Network, Australia), Rachid Guerraoui (EPFL, Switzerland), Andrei Lebedev (University of Sydney, Australia), Gauthier Voron (EPFL, Switzerland)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="T4">
+						<h6>Tutorial 4: at <i>Aragonese (Royal), 14:00 - 17:30, June 23</i></h6>
+						<ul>
+							<li><b>Quantum Computing and Post-Quantum Cryptography: Preparing for the Next Era of Cybersecurity</b> by Hazel Murray, George O’Mahony, Anila Mjeda (Munster Technological University, Ireland)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="T5">
+						<h6>Tutorial 5: at <i>Angioina (Royal), 14:00 - 17:30, June 23</i></h6>
+						<ul>
+							<li><b>Decentralized Federated Learning: Enhancing Reliability with Blockchain</b> by Antonella Del Pozzo, Maxence Perion (Université Paris-Saclay, CEA, List, France)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="T6">
+						<h6>Tutorial 6: at <i>Capuana (Royal), 14:00 - 17:30, June 23</i></h6>
+						<ul>
+							<li><b>Benchmarking of AI Agents for IT Automation Tasks using ITBench</b> by Rohan Arora, Saurabh Jha (IBM Research, Yorktown Heights, USA)</li>
+						</ul>
+					</div>
+
+					<h3>Tuesday, June 24</h3>
+					<hr>
+
+					<div class="session" id="opening">
+						<h6>Opening, at <i>Mirabilis (Royal), 8:45 - 9:15, June 24</i></h6>
+						<p><b>Speakers:</b> Marcello Cinque and Domenico Cotroneo, Università degli Studi di Napoli Federico II</p>
+						<p><b>Speakers:</b> Patrick Lee, The Chinese University of Hong Kong and Saman Zonouz, Georgia Institute of Technology</p>
+					</div>
+					<div class="session" id="opening">
+						<h6>Test of Time (TOT) Award, at <i>Mirabilis (Royal), 09:15 - 09:45, June 24</i></h6>
+						<p><b>Session Chair:</b> Domenico Cotroneo, Università degli Studi di Napoli Federico II</p>
+						<ul>
+							<li><b>FloodGuard: A DoS Attack Prevention Extension in Software-Defined Networks</b> by Haopei Wang, Lei Xu, Guofei Gu</li>
+							<li><b>AVATAR: A Variable-Retention-Time (VRT) Aware Refresh for DRAM Systems</b> by Moinuddin K. Qureshi, Dae-Hyun Kim, Samira Khan, Prashant J. Nair, Onur Mutlu</li>							
+	
+						</ul>
+					</div>										
+					
+					<div class="session" id="keynote1">
+						<h6>Keynote 1, at <i>Mirabilis (Royal), 9:45 - 10:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Domenico Cotroneo (Università degli Studi di Napoli Federico II)</p>
+						<ul>
+							<li><b>The AI Paradox: Between Global Power, Technology Sourcing, Errors and (De)regulation Shifts</b> by Roberto Baldoni (Senior Advisor for Technology and Cybersecurity Policy, Embassy of Italy in Washington DC)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="RS1">
+						<h6>RS1: Best Paper Award, at <i>Mirabilis (Royal), 11:00 - 12:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Saman Zonouz, Georgia Institute of Technology, USA</p>
+						<ul>
+							<li><b>Privacy Analysis of Oblivious DNS over HTTPS: a Website Fingerprinting Study</b> by Mohammad Amir Salari (Saint Louis University), Abhinav Kumar (University of Massachusetts Amherst), Federico Rinaudi (Politecnico Di Torino), Reza Tourani (Saint Louis University), Alessio Sacco (Politecnico Di Torino), Flavio Esposito (Saint Louis University)</li>
+							<li><b>GnuZero: A Compiler-Based Zeroization Static Detection Tool for the Masses</b> by Pierrick Philippe (University of Rennes, CNRS, IRISA), Mohamed Sabt (University of Rennes, CNRS, IRISA), Pierre-Alain Fouque (Univ Rennes, CNRS, IRISA)</li>
+							<li><b>Faster Hash-based Multi-valued Validated Asynchronous Byzantine Agreement</b> by Hanwen Feng (The University of Sydney); Zhenliang Lu (Nanyang Technological University); Tiancheng Mai, Qiang Tang (The University of Sydney)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="RS2">
+						<h6>RS2: Blockchains, at <i>Aula Magna (Centro Congressi), 14:00 - 15:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Silvia Bonomi (Università degli Studi di Roma "La Sapienza", Italy)</p>
+						<ul>
+							<li><b>ammBoost: State Growth Control for AMMs</b> by Nicolas Michel, Mohamed E. Najd, Ghada Almashaqbeh (University of Connecticut)</li>
+							<li><b>Mitigating Front-Running Attacks through Fair and Resilient Transaction Dissemination</b> by Wassim Yahyaoui (SnT, University of Luxembourg); Joachim Bruneau-Queyreix (Université de Bordeaux); Jérémie Decouchant (TU Delft); Marcus Völp (SnT, University of Luxembourg)</li>
+							<li><b>Reentrancy Redux: The Evolution of Real-World Reentrancy Attacks on Blockchains</b> by Yuqi Liu, Rui Xi, Karthik Pattabiraman (University of British Columbia)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="RS3">
+						<h6>RS3: AI Security, at <i>Aula B (Centro Congressi), 14:00 - 15:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Roberto Natella (Università degli Studi di Napoli Federico II, Italy)</p>
+						<ul>
+							<li><b>Towards Automated and Explainable Threat Hunting with Generative AI</b> by Moumita Das Purba, Bei-Tseng Chu, Will French (University of North Carolina at Charlotte)</li>
+							<li><b>Prompting the Unseen: Detecting Hidden Backdoors in Black-Box Models</b> by Zixuan Huang, Jia-Wei Chen, Zhipeng Zhang, Chia-Mu Yu (National Yang Ming Chiao Tung University)</li>
+							<li><b>Semantically Improved Adversarial Attack Based on Masked Language Model via Context Preservation</b> by Hao Tian (South China University of Technology); Hao-Tian Wu (Guangzhou University); Yiu-ming Cheung (Hong Kong Baptist University); Junhui He (South China University of Technology); Zhihong Tian (Guangzhou University)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="RS4">
+						<h6>RS4: Voice and UAV Security, at <i>Catalana (Royal), 14:00 - 15:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Saurabh Bagchi (Purdue University, USA)</p>
+						<ul>
+							<li><b>LiveGuard: Voice Liveness Detection via Wavelet Scattering Transform and Mel Spectrogram Scaling</b> by Liqun Shan, Xingli Zhang, Md Imran Hossen, Xiali Hei (University of Louisiana at Lafayette)</li>
+							<li><b>SOUNDBOOST: Effective RCA and Attack Detection for UAV via Acoustic Side-Channel</b> by Haoran Wang, Zheng Yang (Georgia Institute of Technology); Sangdon Park (Pohang University of Science and Technology); Yibin Yang (Georgia Institute of Technology); Seulbae Kim (Pohang University of Science and Technology); Willian Lunardi, Martin Andreoni (Technology Innovation Institute); Taesoo Kim, Wenke Lee (Georgia Institute of Technology)</li>
+							<li><b>"I will always be by your side": A Side-channel Aided PWM-based Holistic Attack Recovery for Unmanned Aerial Vehicles</b> by Muneeba Asif, Jean C Tonday Rodriguez, Mohammad Kumail Kazmi, Mohammad Ashiqur Rahman, Kemal Akkaya (Florida International University)</li>
+						</ul>
+					</div>
+
+					<div class="session" id="RS5">
+						<h6>RS5: Blockchains and Federated Learning, at <i>Aula Magna (Centro Congressi), 16:00 - 17:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Sara Bouchenak (Institut National des Sciences Appliquées (INSA) Lyon, France)</p>
+						<ul>
+							<li><b>PhishingHook: Catching Phishing Ethereum Smart Contracts leveraging EVM Opcodes</b> by Pasquale De Rosa, Simon Queyrut (University of Neuchâtel, Switzerland); Yérom-David Bromberg (University of Rennes, INRIA, France); Pascal Felber, Valerio Schiavoni (University of Neuchâtel, Switzerland)</li>
+							
+							<li><b>GTV: Generating Tabular Data via Vertical Federated Learning</b> by Zilong Zhao (National University of Singapore); Han Wu (University of Southampton); Aad Van Moorsel (University of Birmingham); Lydia Chen (TU Delft)</li>
+							<li><b>VerifyVFL: Practical Verifiable Vertical Federated Learning</b> by Junchen Hou, Lan Zhang (University of Science and Technology of China)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="RS6">
+						<h6>RS6: Architecture Evaluation, at <i>Aula B (Centro Congressi), 16:00 - 17:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Hiroshi Yamada (Tokyo University of Agriculture and Technology (TUAT), Japan)</p>
+						<ul>
+							<li><b>EasyDRAM: An FPGA-based Infrastructure for Fast and Accurate End-to-End Evaluation of Emerging DRAM Techniques</b> by Oğuzhan Canpolat (TOBB ETÜ and ETH Zurich); Ataberk Olgun (ETH Zurich); David Novo (LIRMM, Univ Montpellier, CNRS); Oguz Ergin (University of Sharjah and TOBB ETÜ); Onur Mutlu (ETH Zurich)</li>
+							<li><b>Hierarchical Model-Based Approach for Concurrent Testing of Neuromorphic Architecture</b> by Suman Kumar, Abhishek Kumar Mishra, Anup Das, Nagarajan Kandasamy (Drexel University)</li>
+							<li><b>ConfBench: A Tool for Easy Evaluation of Confidential Virtual Machines</b> by Andrea De Murtas (Sapienza University of Rome, Italy and University of Neuchâtel, Switzerland); Daniele Cono D'Elia, Giuseppe Antonio Di Luna (Sapienza University of Rome, Italy); Pascal Felber (University of Neuchatel, Switzerland); Leonardo Querzoni (Sapienza University of Rome, Italy); Valerio Schiavoni (University of Neuchâtel, Switzerland)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="RS7">
+						<h6>RS7: IoT and Smart Homes, at <i>Catalana (Royal), 16:00 - 17:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Kenji Kono (Keio University, Japan)</p>
+						<ul>
+							<li><b>On Security Vulnerabilities in Transportation IoT Devices</b> by Jason Yih (College of Computer, Mathematical, and Natural Sciences; University of Maryland, College Park, MD); Katerina Goseva-Popstojanova (Lane Department of Computer Science and Electrical Engineering; West Virginia University, Morgantown, WV); Michel Cukier (Department of Mechanical Engineering, University of Maryland, College Park, MD)</li>
+							<li><b>Privacy from 5 PM to 6 AM: Tracking and Transparency Mechanisms in the HbbTV Ecosystem</b> by Christian Böttger (Institute for Internet Security, Westphalian University of Applied Sciences); Henry Hosseini (University of Münster; Institute for Internet Security, Westphalian University of Applied Sciences); Christine Utz (Radboud University); Nurullah Demir (Institute for Internet Security, Westphalian University of Applied Sciences); Jan Hörnemann (AWARE7 GmbH); Christian Wressnegger (Karlsruhe Institute of Technology); Thomas Hupperich (University of Münster); Norbert Pohlmann (Institute for Internet Security, Westphalian University of Applied Sciences); Matteo Große-Kampmann (Rhine-Waal University of Applied Sciences); Tobias Urban (Institute for Internet Security, Westphalian University of Applied Sciences)</li>
+						</ul>
+					</div>
+
+					
+					<div class="session" id="I1">
+						<h6>Industry 1: Security in Cyber-Physical and Industrial Systems, at <i>Aragonese (Royal), 14:00 - 15:30, June 24</i></h6>
+						<p><b>Session Chair:</b> George Violettas, SYSGO GmbH, Germany</p>
+						<ul>
+							<li><b>Quantitative Security Metrics: Assessment of Cyberattack Scenarios for Cyber-Physical Systems</b> by Mike Da Silva (De Vinci Higher Education, De Vinci Research Center, Paris, France), Nga Nguyen (De Vinci Higher Education, De Vinci Research Center, Paris, France)</li>
+							<li><b>Regulating Prosumer Device Security: a Key Priority in Power Grid Protection</b> by Luigi Coppolino (University of Naples Parthenope), Roberto Nardone (University of Naples Parthenope), Alfredo Petruolo (University of Naples Parthenope), Luigi Romano (University of Naples Parthenope)</li>
+							<li><b>Runtime Verification of Program Organization Units in Safe Programmable Logic Controller Systems</b> by Hisham Unniyankal (University of Genova), Davide Ancona (University of Genova), Angelo Ferrando (University of Modena and Reggio Emilia), Fabio Parodi (Technoleader Srl), Alessandro Alessi (Technoleader Srl), Federico Bottino (COBO SpA)</li>
+							<li><b>Assessing the Transferability of Adversarial Patches in Real-World Systems: Implications for Adversarial Testing of Image Recognition Security</b> by Stephan Kleber (Mercedes-Benz Tech Innovation GmbH), Tim Palm (Ulm University), Jeremias Eppler (Mercedes-Benz Tech Innovation GmbH), Dennis Eisermann (Ulm University), Frank Kargl (Ulm University)</li>
+						</ul>
+					</div>
+
+					<div class="session" id="I2">
+						<h6>Industry 2: Hardware Endurance and Interference, at <i>Aragonese (Royal), 16:00 - 17:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Jan Micha Borrmann, ExpectedIT GmbH, Germany</p>
+						<ul>
+							<li><b>Observe and Regulate Memory Interference on MPSoC: a Practical Approach</b> by Andrea Bastoni (TUM), Alexander Zuepke (TUM), Marco Solieri (Minerva Systems)</li>
+							<li><b>Hardware Telemetry at Scale: A Case Study on SSDs Endurance Monitoring in Datacenters</b> by Olusiji Medaiyese (Meta Platforms Inc.), Fred Lin (Meta Platforms Inc.), Harish Dixit (Meta Platforms Inc.), Richa Mishra (Meta Platforms Inc.), Andrea Baglioni (Meta Platforms Inc.), Leandro Silva (Meta Platforms Inc.), Mike Elkin (Meta Platforms Inc.), Andrei Ilyashenko (Meta Platforms Inc.), Gor Safaryan (Meta Platforms Inc.), Dhankaran Singh Ajravat (Meta Platforms Inc.), Xun Jiao (Meta Platforms Inc.), Vineet Parekh (Meta Platforms Inc.)</li>
+							<li><b>On the Feasibility of Exploiting the USB Power Line for Side-Channel Attacks against Samsung Smartphone Models</b> by Leonardo da Costa (Samsung Research and Development Institute Brazil), Witor Oliveira (Samsung Research and Development Institute Brazil), Caio Peres (Samsung Research and Development Institute Brazil), Rene de Mello (Samsung Research and Development Institute Brazil), Jonghun Song (Samsung Electronics), Seokwon Jeong (Samsung Electronics), Hyungchul Jung (Samsung Electronics)</li>
+							<li><b>Towards Robust Autonomous Landing Systems: Iterative Solutions and Key Lessons Learned</b> by Sebastian Schroder (Macquarie University), Yao Deng (Macquarie University), Alice James (Macquarie University), Avishkar Seth (Macquarie University), Kye Morton (Skyy Network), Subhas Mukhopadhyay (Macquarie University), Richard Han (Macquarie University), Xi Zheng (Macquarie University)</li>
+						</ul>
+					</div>
+
+					<div class="session" id="POSTER_PITCH_1">
+						<h6>Posters, at <i>Aula A (Centro Congressi), 14:00 - 15:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Nuno Laranjeiro, University of Coimbra, Portugal</p>
+						<ul>
+							<li><b>DeepICS: Deep Causal Relationship Modeling for Multi-Source Log-Based Anomaly Detection in Industrial Control Systems</b> by Seong-Su Yoon, Ieck-Chae Euom and Dong-hyuk Shin (System Security Research Center, Chonnam National University)</li>
+							<li><b>Real-Time GOOSE Attack Detection in IEC 61850 Substations Using SDN-Based Traffic Inspection</b> by Seunghyun Yoon (Korea Institute of Energy Technology (KENTECH)), Ryangsoo Kim (Electronics and Telecommunications Research Institute (ETRI)), Hark Yoo (Electronics and Telecommunications Research Institute (ETRI)), Hyuk Lim (Korea Institute of Energy Technology (KENTECH))</li>
+							<li><b>Intrusion Detection System with Domain-incremental Continual Learning</b> by Hyejin Kim (Korea Institute of Energy Technology (KENTECH)), Seunghyun Yoon (Korea Institute of Energy Technology (KENTECH)), Dan Dongseong Kim (The University of Queensland), Jin-Hee Cho (Virginia Tech), Terrence J. Moore (DEVCOM Army Research Lab), Frederica F. Nelson (DEVCOM Army Research Lab), Hyuk Lim (Korea Institute of Energy Technology (KENTECH))</li>
+							<li><b>Looking for Anomalies in Cross-Chain Bridges</b> by André Augusto (INESC-ID, Instituto Superior Técnico, Universidade de Lisboa), Rafael Belchior (INESC-ID, Instituto Superior Técnico, Universidade de Lisboa), Jonas Pfannschmidt (Blockdaemon), André Vasconcelos (INESC-ID, Instituto Superior Técnico, Universidade de Lisboa), Miguel Correia (INESC-ID, Instituto Superior Técnico, Universidade de Lisboa)</li>							
+							<li><b>Adaptive Identity Management: Unified Personalization and Privacy Protection for Web Apps</b> by Min-Chieh Wu, Yu-Sung Wu (National Yang Ming Chiao Tung University)</li>
+							<li><b>Security Vulnerability Risk Growth Model based on CVSS 4.0</b> by Sora Okada, Masaya Shimakawa, Takashi Minohara (Dept. of Comp. Sci. Takushoku University)</li>
+							<li><b>Study of Appropriate Information Combination in Image-based Obfuscated Malware Detection</b> by Tetsuro Takahashi, Rikima Mitsuhashi, Masakatsu Nishigaki, Tetsushi Ohki (Shizuoka University)</li>
+							<li><b>Detecting Scrapers on E-commerce Websites Using a Reduced Feature Set</b> by Umberto Fontana (Amadeus IT Group and Telecom SudParis France), Elisa Chiapponi (Amadeus IT Group, France), Claudio Costanza (Amadeus IT Group, France), Vincent Rigal (Amadeus IT Group, France), Olivier Thonnard (Amadeus IT Group, France), Martynas Buozis (Amadeus IT Group, France), Herve Debar (Telecom SudParis)</li>
+							<li><b>Jailbreaking Generative AI: Empowering Novices to Conduct Phishing Attacks</b> by Rina Mishra, Gaurav Varshney, Shreya Singh (IIT Jammu)</li>
+							<li><b>PhishingHook</b> by Pasquale De Rosa (University of Neuchâtel), Simon Queyrut (University of Neuchâtel), Yérom-David Bromberg (Univ Rennes, Inria, CNRS, IRISA), Pascal Felber (University of Neuchâtel), Valerio Schiavoni (University of Neuchâtel)</li>
+							<li><b>Learnable Encryption with a Diffusion Property</b> by Ijaz Ahmad (Department of Electrical and Computer Engineering, Korea University), Joongheon Kim (Department of Electrical and Computer Engineering, Korea University), Seokjoo Shin (Chosun University)</li>
+							<li><b>TOSense: We Read, You Click</b> by Xinzhang Chen, Hassan Ali, Arash Shaghaghi, Salil S. Kanhere, Sanjay Jha (UNSW Sydney)</li>
+							<li><b>Agree to Disagree: Revisiting the Comparison of (Multi-) Paxos and Raft</b> by Lewis Tseng (UMass Lowell)</li>
+							<li><b>Designing Scalable, Secure Systems for Atomic-Scale Physical AI: Enabling Open Science and Collaborative Data Management and Analytics</b> by Lewis Tseng (UMass Lowell), Yu-Tsun Shao (USC)</li>
+						</ul>
+					</div>					
+					
+					<div class="session" id="DISRUPT_1">
+						<h6>Disrupt 1: Trust and Assurance in LLM and ML-Enabled Systems, at <i>Aula A (Centro Congressi), 16:00 - 17:30, June 24</i></h6>
+						<p><b>Session Chair:</b> Marco Vieira, University of North Carolina at Charlotte, USA</p>
+						<ul>
+							<li><b>Assessing the Validity of LLM-Driven Hazard Analysis: An Assessor’s Perspective</b> by Michael Kevvay (MIREA - Russian Technical University), Vladislav Gryaznykh (MIREA - Russian Technical University), Oleg Kirovski (SafetyConsult LLC), Anton Korolev (Russian Technical University)</li>
+							<li><b>Trusted Federated Learning: Towards a Partial Zero-Knowledge Proof Approach</b> by Yannis Formery (COSYS-ERENA, Université Gustave Eiffel), Leo Mendiboure (COSYS-ERENA, Université Gustave Eiffel), Jonathan Villain (COSYS-Leost, Université Gustave Eiffel), Virginie Deniau (COSYS-Leost, Université Gustave Eiffel), Christophe Gransart (COSYS-Leost, Université Gustave Eiffel), Stephane Delbruel (Université de Bordeaux)</li>
+							<li><b>Rethinking BFT: Leveraging Diverse Software Components with LLMs</b> by João Imperadeiro (INESC TEC), Ana Nunes Alonso (INESC TEC & University of Minho), José Orlando Pereira (U. Minho & INESCTEC)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="POSTER_SPRITZ">
+						<h6>Poster Spritz Reception at <i>Poster Exhibition Room (Centro Congressi), 17:30 - 18:30, June 24</i></h6>
+						<p>
+							Come to visit DSN posters while tasting the famous Italian aperitif (Spritz)!
+						</p>
+					</div>
+
+					<h3>Wednesday, June 25</h3>
+					<hr>
+
+					<div class="session" id="JCL">
+						<h6>Jean-Claude Laprie (JCL) Award, at <i>Aula Magna (Centro Congressi), 09:00 - 09:45, June 25</i></h6>
+						<p><b>Session Chair:</b> Marco Vieira, University of North Carolina at Charlotte, USA</p>
+						<ul>
+						  <li><b>Flikker: saving DRAM refresh power through critical data partitioning</b> by Song Liu, Karthik Pattabiraman, Thomas Moscibroda, and Benjamin G. Zorn. ASPLOS XVI, 2011. <a href="https://doi.org/10.1145/1950365.1950391" target="_blank">https://doi.org/10.1145/1950365.1950391</a></li>
+						  <li><b>Lightweight Probabilistic Broadcast</b> by Patrick Th. Eugster, Rachid Guerraoui, S. B. Handurukande, Petr Kouznetsov, and Anne-Marie Kermarrec. DSN 2001. <a href="https://doi.org/10.1109/DSN.2001.941428" target="_blank">https://doi.org/10.1109/DSN.2001.941428</a></li>
+						</ul>
+					</div>
+					  
+					<div class="session" id="keynote2">
+						<h6>Keynote 2, at <i>Aula Magna (Centro Congressi), 09:45 - 10:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Marcello Cinque</p>
+						<ul>
+						  <li><b>Provable Guarantees for Data-driven Policy Synthesis: a Formal Verification Perspective</b> by Marta Kwiatkowska (University of Oxford)</li>
+						</ul>
+					</div>
+
+					
+
+					<div class="session" id="RS8">
+						<h6>RS8: Network Intrusion Detection, at <i>Aula Magna (Centro Congressi), 11:00 - 12:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Miguel Correia (INESC-ID, Instituto Superior Técnico, Universidade de Lisboa, Portugal)</p>
+						<ul>
+						  <li><b>LAGER: Layer-wise Graph Feature Extractor for Network Intrusion Detection</b> by Ke He (University of Canterbury), Dan Dongseong Kim (The University of Queensland), Muhammad Rizwan Asghar (University of Surrey)</li>
+						  <li><b>IPMES+: Enhancing Incremental TTP Detection with Frequency and Flow Semantics</b> by Hong-Wei Li (Research Center for Information Technology Innovation, Academia Sinica), Ping-Ting Liu, Bo-Wei Lin (National Yang Ming Chiao Tung University), Yennun Huang (Research Center for Information Technology Innovation, Academia Sinica)</li>
+						  <li><b>MalTAG: Encrypted Malware Traffic Detection Framework via Graph Based Flow Interaction Mining</b> by Renjie Li, Zhou Zhou, Hao Miao, Fengyuan Shi (University of Chinese Academy of Sciences China, Institute of Information Engineering), Qingyun Liu (Institute of Information Engineering, Chinese Academy of Sciences)</li>
+						</ul>
+					  </div>
+					  
+
+					  <div class="session" id="RS9">
+						<h6>RS9: Cyber-Physical Systems, at <i>Aula B (Centro Congressi), 11:00 - 12:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Pascal Felber (University of Neuchatel, Switzerland)</p>
+						<ul>
+						  <li><b>ICSTRACKER: Backtracking Intrusions in Modern Industrial Control Systems</b> by Md Raihan Ahmed, Jainta Paul, Levi Taiji Li, Luis Garcia, Mu Zhang (University of Utah)</li>
+						  <li><b>MichiCAN: Spoofing and Denial-of-Service Protection using Integrated CAN Controllers</b> by Mert D. Pesé, Bulut Gozubuyuk (Clemson University), Eric Andrechek (University of Michigan), Habeeb Olufowobi (University of Texas at Arlington), Mohammad Hamad (Technical University of Munich), Kang G. Shin (University of Michigan)</li>
+						  <li><b>ZCOVER: Uncovering Z-Wave Controller Vulnerabilities Through Systematic Security Analysis of Application Layer Implementation</b> by Nkuba Kayembe Carlos, Jimin Kang, Seunghoon Woo, Heejo Lee (Korea University)</li>
+						</ul>
+					  </div>
+
+					  
+					  
+					  <div class="session" id="RS10">
+						<h6>RS10: Network Measurement, at <i>Aula Magna (Centro Congressi), 14:00 - 15:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Haining Wang (Virginia Tech, USA)</p>
+						<ul>
+						  <li><b>PTC: Prefix Tuning CodeT5 for High-Quality Secure Network Measurement Script Generation</b> by Yuanda Wang, Xinhui Han (Peking University)</li>
+						  <li><b>Decoding DNS Centralization: Measuring and Identifying NS Domains Across Hosting Providers</b> by Qihang Peng, Mingming Zhang, Deliang Chang, Jia Zhang, Baojun Liu, Haixin Duan (Tsinghua University; Zhongguancun Laboratory; QI-ANXIN Technology Research Institute)</li>
+						  <li><b>Towards Continuous Integrity Attestation and Its Challenges in Practice: A Case Study of Keylime</b> by Margie Ruffin, Chenkai Wang (University of Illinois Urbana-Champaign), Gheorghe Almasi, Abdulhamid Adebayo, Hubertus Franke (IBM Research), Gang Wang (University of Illinois Urbana-Champaign)</li>
+						</ul>
+					  </div>
+					  
+					  <div class="session" id="RS11">
+						<h6>RS11: Autonomous Systems, at <i>Aula A (Centro Congressi), 14:00 - 15:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Xugui Zhou (Louisiana State University, USA)</p>
+						<ul>
+							<li><b>RAVAGE: Robotic Autonomous Vehicles’ Attack Generation Engine</b> by Pritam Dash, Karthik Pattabiraman (University of British Columbia)</li>
+							<li><b>Safety Interventions against Adversarial Patches in an Open-Source Driver Assistance System</b> by Cheng Chen (Louisiana State University), Grant Xiao (University of Virginia), Daehyun Lee, Lishan Yang (George Mason University), Evgenia Smirni (William & Mary), Homa Alemzadeh (University of Virginia), Xugui Zhou (Louisiana State University)</li>
+						  	<li><b>Multi-version Machine Learning and Rejuvenation for Resilient Perception in Safety-critical Systems</b> by Qiang Wen (University of Tsukuba), Júlio Mendonça (University of Luxembourg), Fumio Machida (University of Tsukuba), Marcus Völp (University of Luxembourg)</li>
+						  
+						</ul>
+					  </div>
+
+					  <div class="session" id="RS12">
+						<h6>RS12: Network Traffic Security, at <i>Aula Magna (Centro Congressi), 16:00 - 17:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Patrick Lee (The Chinese University of Hong Kong, Hong Kong)</p>
+						<ul>
+						  <li><b>Secure access to network data for mobile network traffic analysis applications</b> by Djob Mvondo, Yérom-David Bromberg (Univ Rennes, CNRS, INRIA, IRISA)</li>
+						  <li><b>Securing In-Network Traffic Control Systems with P4Auth</b> by Ranjitha K, Medha Rachel Panna, Stavan Nilesh Christian, Karuturi Havya Sree, Sri Hari Malla, Dheekshitha Bheemanath (Indian Institute of Technology Hyderabad), Rinku Shah (Indraprastha Institute of Information Technology Delhi), Praveen Tammana (Indian Institute of Technology Hyderabad)</li>
+						  <li><b>QUIC-Aware Load Balancing: Attacks and Mitigations</b> by Liliana Kistenmacher, Anum Talpur, Mathias Fischer (Universität Hamburg)</li>
+						</ul>
+					  </div>
+					  
+					  <div class="session" id="RS13">
+						<h6>RS13: Hardware Security, at <i>Aula A (Centro Congressi), 16:00 - 17:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Dan Kim (The University of Queensland, Australia)</p>
+						<ul>
+						  <li><b>GREAT: Global Representation and Edge-Attention for Hardware Trojan Detection</b> by Zhengyi Li (Xiangtan University), Wei Cheng (National University of Defense Technology), Huanrong Tang (Xiangtan University), Yaohua Wang (National University of Defense Technology)</li>
+						  <li><b>MicroSampler: A Framework for Microarchitecture-Level Leakage Detection in Constant Time Execution</b> by Moein Ghaniyoun (The Ohio State University), Kristin Barber (Google), Yinqian Zhang (Southern University of Science and Technology), Radu Teodorescu (The Ohio State University)</li>
+						  <li><b>Revisiting Main Memory-Based Covert and Side Channel Attacks in the Context of Processing-in-Memory</b> by Nisa Bostanci, Konstantinos Kanellopoulos, Ataberk Olgun, Giray Yaglikci, Ismail Emir Yuksel, Nika Mansouri Ghiasi (ETH Zurich); Zülal Bingöl (Bilkent University); Mohammad Sadrosadati, Onur Mutlu (ETH Zurich)</li>
+						</ul>
+					  </div>
+
+					  <div class="session" id="DISRUPT_2">
+						<h6>Disrupt 2: Security and Resilience in Emerging Computing Paradigms, at <i>Aula A (Centro Congressi), 11:00 - 12:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Andrea Bondavalli (Università degli Studi di Firenze, Italy)</p>
+						<ul>
+						  <li><b>Enhancing Accuracy in Approximate Byzantine Agreement with Bayesian Inference</b> by Roy Shadmon, Owen Arden (UC Santa Cruz)</li>
+						  <li><b>UniPHY: Unified Physical Layer Security for LPWANs</b> by Stephane Delbruel (LaBRI - Univ. of Bordeaux, France), Léo Mendiboure, Yannis Formery (Univ. Gustave Eiffel), Joachim Bruneau-Queyreix, Laurent Réveillère (LaBRI - Univ. of Bordeaux)</li>
+						  <li><b>Digital Cluster Circuits for Reliable Datacenters</b> by Davide Rovelli, Patrick Eugster (Università della Svizzera Italiana (USI))</li>
+						  <li><b>Replicating Human Immune System via Harmonic Radar: A Framework and Preliminary Results in Thwarting Cyber-physical Attacks</b> by Nathanaël Denis, Roberto Di Pietro (King Abdullah University of Science and Technology)</li>
+						</ul>
+					  </div>
+
+
+					  <div class="session" id="doctoral_1">
+						<h6>Doctoral 1: Autonomous drones and vehicles, at <i>Aula B (Centro Congressi), 14:00 - 15:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Sonia Ben Mokhtar, Centre national de la recherche scientifique (CNRS), France</p>
+						<ul>
+						  
+						  <li><b>AI Agent-based Adaptive Task Offloading for Autonomous Drones in Dynamic Environments</b> by Qingyang Zhang, Fumio Machida (University of Tsukuba)</li>
+						  <li><b>Effect of Human-Selected Hard Examples to Improve Accuracy of Semantic Segmentation</b> by Yuriko Ueda, Marin Wada, Miho Adachi, Ryusuke Miyamoto (Meiji University)</li> 
+						  <li><b>Leaving No Blind Spots: Toward Automotive Cybersecurity</b> by Francesco Marchiori, Mauro Conti (University of Padova)</li>
+						  <li><b>Keynote: From Draft to DSN: How to Get Your Paper In</b> by Valerio Schiavoni (Université de Neuchâtel, Switzerland)</li>
+						</ul>
+					  </div>
+
+					  
+
+					  <div class="session" id="doctoral_2">
+						<h6>Doctoral 2: Cybersecurity and Fault-tolerance, at <i>Aula B (Centro Congressi), 16:00 - 17:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Sonia Ben Mokhtar, Centre national de la recherche scientifique (CNRS), France</p>
+						<ul>
+							<li><b>On Predictive Modeling of Multi-Bit Upsets for Emulated Fault Injection</b> by Trishna Rajkumar, Johnny Öberg (KTH Royal Institute of Technology)</li>
+							<li><b>Towards Provenance for Cybersecurity in Cloud-Native Production Infrastructure</b> by Paul Robert Balthazar Houssel, Sylvie Laniepce (Orange Innovation), Olivier Levillain (Institut Polytechnique de Paris)</li>
+							<li><b>Strategies to Describe and Timely Detect Attacks</b> by Tommaso Puccetti (Department of Mathematics and Informatics, University of Florence)</li>						  
+						  	<li><b>Enhanced Cybersecurity Monitoring in Multi-Plant Flexible Manufacturing Environments</b> by Antonio Iannaccone, Roberto Nardone (University of Naples "Parthenope")</li>
+						  	<li><b>SCAMDETECT: Towards a Robust, Agnostic Framework to Uncover Threats in Smart Contracts</b> by Pasquale De Rosa, Pascal Felber, Valerio Schiavoni (University of Neuchâtel)</li>
+						</ul>
+					  </div>
+					
+					  <div class="session" id="I3">
+						<h6>Industry 3: Reliability and Safety in Complex Systems, at <i>Aragonese (Royal), 14:00 - 15:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Luca Porzio, Micron Technology, Italy</p>
+						<ul>
+						  <li><b>Keynote: Increasing memory density, complexity and reliability: sustainable trend at reasonable cost? </b> by Mauro Luigi Sali, Senior Director Micron Technology, Italy</li>
+						  <li><b>Beyond Component Failures: Safety Challenges in Complex Maritime Control Systems</b> by Odd Ivar Haugen, Aleks Karlsen, Steven Mearns Cargill, Jan van Tiggelen (DNV)</li>
+						  
+						  <li><b>Integrating Testing with Runtime Verification for Mission-Critical Distributed Control Systems</b> by Davide Ancona, Stefano Avola, Angelo Ferrando, Pierpaolo Baglietto, Maurice ter Beek, Giancarlo Camera, Andrea Parodi, Matteo Pinasco (Various Institutions in Italy and CNR)</li>
+						  <li><b>Large-Scale AI Infra Reliability: Challenges, Strategies, and Llama 3 Training Experience</b> by Xun Jiao, Abhinav Pandey, Karthik Pattabiraman, Fred Lin (Meta Platforms Inc and University of British Columbia)</li>
+						</ul>
+					  </div>
+					  
+					  <div class="session" id="I4">
+						<h6>Industry 4: Anomaly and Fault Detection, at <i>Aragonese (Royal), 16:00 - 17:30, June 25</i></h6>
+						<p><b>Session Chair:</b> George Violettas, SYSGO GmbH, Germany</p>
+						<ul>
+						  <li><b>Anomaly Detection in Energy Performance Certificates: From Oblivious to Enlightened</b> by Nawel Benarba (INSA Lyon), Mathieu Chevalier (INSA Lyon), Sara Bouchenak (INSA Lyon), Olivier Jung (Kardino), Benjamin Bertin (INSA Lyon)</li>
+						  <li><b>When Features Gets Exploited: Functional Abuse and the Future of Industrial Fraud Prevention</b> by Elisa Chiapponi, Umberto Fontana, Elyssa Boulilla, Claudio Costanza, Vincent Rigal, Olivier Thonnard (Amadeus IT Group and Télécom SudParis)</li>
+						  <li><b>Energy-Efficient Anomaly Detection in Autonomous Vehicles Using RSNNs</b> by Daeho Kim, Eun-Kyu Lee (Incheon National University), Ji-Woo Lee (Korea Automotive Technology Institute)</li>
+						  <li><b>Expectations Versus Reality: Evaluating Intrusion Detection Systems in Practice</b> by Larry Huynh, Jake Hesford, Daniel Cheng, Alan Wan (University of Western Australia), Seungho Kim, Hyoungshick Kim (Sungkyunkwan University), Jin Hong (University of Western Australia)</li>
+						  <li><b>Cordial: Cross-row Failure Prediction Method Based on Bank-level Error Locality for HBMs</b> by Wenwei Gu, Jiazhen Gu, Renyi Zhong, Wenyu Zhang, Ming Li (Huawei Hong Kong Research Center), Michael R. Lyu (The Chinese University of Hong Kong)</li>
+						</ul>
+					  </div>
+					  
+					  <div class="session" id="WDMD_1">
+						<h6>WDMD 1: Keynote Session 1, at <i>Catalana (Royal), 09:00 - 10:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Chengqiang Huang (Huawei Technologies Co., Ltd.)</p>
+						<ul>
+						  <li><b>AI for Intelligent Maintenance</b> by Enrico Zio (Politecnico di Milano, Italy)</li>
+						  <li><b>When Spatio-Temporal Data Meet Large Language Models</b> by Yuxuan Liang (Hong Kong University of Science and Technology, Guangzhou)</li>
+						  <li><b>Advancing Decentralized AI: Scalable, Adaptive, and Client-Centric Learning Systems</b> by Ahmed M. A. Sayed (Queen Mary University of London, UK)</li>
+						</ul>
+					  </div>
+					
+					<div class="session" id="WDMD_2">
+						<h6>WDMD 2: Keynote Session 2, at <i>Catalana (Royal), 11:00 - 12:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Chengqiang Huang (Huawei Technologies Co., Ltd.)</p>
+						<ul>
+							<li><b>Reliability challenges and opportunities for AI infra: from industry perspective</b> by Zheng Yang (Huawei Technologies Co., Ltd.)</li>
+							<li><b>Characterizing Modern GPU Resilience and Impact in HPC Systems: A Case Study of A100 GPUs</b> by Shengkun Cui (University of Illinois Urbana-Champaign, United States), Archit Patke (University of Illinois Urbana-Champaign, United States), Ziheng Chen (University of Illinois Urbana-Champaign, United States),  Aditya Ranjan (University of Illinois Urbana-Champaign, United States), Hung Nguyen (University of Illinois Urbana-Champaign, United States), Phuong Cao (University of Illinois Urbana-Champaign, United States), Brett Bode (University of Illinois Urbana-Champaign, United States),
+							Gregory Bauer (University of Illinois Urbana-Champaign, United States), Saurabh Jha (IBM Research, United States), Chandra Narayanaswam (IBM Research, United States), Daby Sow (IBM Research, United States), Catello Di Martino (Nokia Bell Labs, Brazil), Zbigniew T. Kalbarczyk (University of Illinois Urbana-Champaign, United States), Ravishankar K. Iyer (University of Illinois Urbana-Champaign, United States)</li>
+							<li><b>Panel: How LLM Change the Nature of Reliability Engineering</b></li>
+						</ul>
+					</div>
+
+					<div class="session" id="WDMD_3">
+						<h6>WDMD 3: Long Presentation Session, at <i>Catalana (Royal), 14:00 - 15:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Yuchu Fang (Huawei Technologies Co., Ltd.)</p>
+						<ul>
+						  <li><b>Recent Advances in Agentic AI</b> by Yunpu Ma (Ludwig Maximilian University of Munich, Germany)</li>
+						  <li><b>Reinforcement learning for multi-agent with asynchronous missing information fusion method</b> by Jiashan Gao (Beihang University, China)</li>
+						  <li><b>Cultural Reliability of LLMs: Can AI Truly Reflect Global Perspectives?</b> by Yong Cao (University of Tübingen, Germany)</li>
+						  <li><b>Generating Structured Outputs with Language Models: Evaluation and Studies</b> by Saibo Geng (École Polytechnique Fédérale de Lausanne, Switzerland)</li>
+						  <li><b>Understanding and Modeling Human Label Variation in LLM</b> by Beiduo Chen (Ludwig Maximilian University of Munich, Germany)</li>
+						  <li><b>Q&amp;A Slot</b></li>
+						  <li><b>Posters during coffee-break</b></li>
+						</ul>
+					  </div>
+					  
+					<div class="session" id="WDMD_4">
+						<h6>WDMD 4: Short Presentation Session, at <i>Catalana (Royal), 16:00 - 17:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Zhaojun Hao (Huawei Technologies Co., Ltd.)</p>
+						<ul>
+						  <li><b>Optimal energy-efficient scheduling of flexible manufacturing systems based on Petri net simulation and mathematical programming</b> by Mei Chen (Politecnico di Milano, Italy)</li>
+						  <li><b>A knowledge-inspired physics-informed neural network for hydraulic transient simulation of liquid pipelines</b> by Jian Du (China University of Petroleum, China)</li>
+						  <li><b>A human reliability analysis method based on STPA-IDAC and BN-SLIM for driver take-over in Level 3 automated driving</b> by Wenyi Liao (Northwestern Polytechnical University, China)</li>
+						  <li><b>Interpretable wavelet packet kernel-constrained convolutional neural network for bearing fault diagnosis</b> by Sinan Li (Xi'an Jiaotong University, China)</li>
+						  <li><b>Towards uncertainty-aware remaining useful life prediction</b> by Weijun Xu (Politecnico di Milano, Italy)</li>
+						  <li><b>Multimodal explainable few-shot learning for trustworthy PHM operations in the smart manufacturing process</b> by Wujin Deng (Politecnico di Milano, Italy)</li>
+						  <li><b>Research on PHM method based on deep learning technology</b> by Zhiqiang Xu (Politecnico di Milano, Italy)</li>
+						  <li><b>Predictive Maintenance Decision Making for Critical Equipment in Industrial system Based on Remaining Useful Life Estimation</b> by Zongyao Wang (Beijing Jiaotong University, China)</li>
+						  <li><b>Q&A Slot</b></li>
+						  <li><b>Discussion of Challenging Questions</b></li>
+						</ul>
+					</div>
+
+					<h3>Thursday, June 26</h3>
+					<hr>
+
+					<div class="session" id="RS">
+						<h6>Award: Rising Star and William Carter, at <i>Aula Magna (Centro Congressi), 09:00 - 09:45, June 26</i></h6>
+						<p><b>Session Chair:</b> Domenico Cotroneo, Università degli Studi di Napoli Federico II</p>
+						<ul>
+						  <li><b>Rising Star: </b> Baris Kasikci (University of Washington, USA)</li>
+						  <li><b>William Carter: “Enabling Efficient and Scalable DRAM Read Disturbance Mitigation via New Experimental Insights into Modern DRAM Chips” </b> by Abdullah Giray Yağlıkçı (ETH Zurich, Switzerland)</li>
+						</ul>
+					</div>
+					
+					<div class="session" id="keynote3">
+						<h6>Keynote 3, at <i>Aula Magna (Centro Congressi), 09:45 - 10:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Marcello Cinque</p>
+						<ul>
+						  <li><b>Unifying Communication, Computation, and Storage from the Cloud to the Microcontroller</b> by Angelo Corsaro, Ph.D., CEO, CTO, and Co-Founder of ZettaScale Technology</li>
+						</ul>
+					</div>
+
+
+					<div class="session" id="RS14">
+						<h6>RS14: Software Vulnerabilities, at <i>Aula Magna (Centro Congressi), 11:00 - 12:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Regina Moraes (Universidade Estadual de Campinas (UNICAMP), Brazil)</p>
+						<ul>
+						  <li><b>What Lies Beneath: An Empirical Study of Silent Vulnerability Fixes in Open-Source Software</b> by Jialiang Dong, Xinzhang Chen (The University of New South Wales); Willy Susilo (University of Wollongong); Nan Sun (The University of New South Wales); Arash Shaghaghi (The University of New South Wales (UNSW Sydney)); Siqi Ma (The University of New South Wales)</li>
+						  <li><b>An Analysis of Malicious Packages in Open-Source Software in the Wild</b> by Xiaoyan Zhou (Beijing JiaoTong University); Ying Zhang, Wenjia Niu, Jiqiang Liu (Beijing Jiaotong University); Haining Wang (Virginia Tech); Qiang Li (Beijing Jiaotong University)</li>
+						  <li><b>Automatically Generating Rules of Malicious Software Packages via Large Language Model</b> by XiangRui Zhang, XueJie Du, HaoYu Chen, Yongzhong He, Wenjia Niu, Qiang Li (Beijing Jiaotong University)</li>
+						</ul>
+					  </div>
+					  
+					  <div class="session" id="RS15">
+						<h6>RS15: Web and Application Security, at <i>Aula A (Centro Congressi), 11:00 - 12:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Angelos Stavrou (Virginia Tech, USA)</p>
+						<ul>
+						  <li><b>Less is More: Boosting Coverage of Web Crawling through Adversarial Multi-Armed Bandit</b> by Lorenzo Cazzaro, Stefano Calzavara, Maksim Kovalkov (Università Ca' Foscari Venezia); Aleksei Stafeev, Giancarlo Pellegrino (CISPA Helmholtz Center for Information Security)</li>
+						  <li><b>A Closer Look At Modern Evasive Phishing Emails</b> by Elyssa Boulila (Amadeus), Marc Dacier (KAUST), Siva Prem Vengadessa Peroumal, Nicolas Veys (Amadeus); Simone Aonzo (EURECOM)</li>
+						  <li><b>SemiAF: Semi-Supervised App Fingerprinting on Unknown Traffic via Graph Neural Network</b> by Xiaodong Lei, Yongjun Wang, Lin Liu, Junjie Huang, Jiangyong Shi, Luming Yang (National University of Defense and Technology)</li>
+						</ul>
+					  </div>
+					  
+					  <div class="session" id="RS16">
+						<h6>RS16: Fault Tolerance, at <i>Aula B (Centro Congressi), 11:00 - 12:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Fumio Machida (University of Tsukuba, Japan)</p>
+						<ul>
+						  <li><b>ReMlX: Resilience for ML Ensembles using XAI at Inference against Faulty Training Data</b> by Abraham Chan, Arpan Gujarati, Karthik Pattabiraman, Sathish Gopalakrishnan (The University of British Columbia)</li>
+						  <li><b>ParaVerser: Harnessing Heterogeneous Parallelism for Affordable Fault Detection in Data Centers</b> by Minli Julie Liao (University of Cambridge); Sam Ainsworth (University of Edinburgh); Lev Mukhanov (Queen Mary University London); Adrian Barredo (Barcelona Supercomputing Center); Markos Kynigos (The University of Manchester); Timothy Jones (University of Cambridge)</li>
+						  <li><b>ReCraft: Self-Contained Split, Merge, and Membership Change of Raft Protocol</b> by Kezhi Xiong (Northeastern University); Soonwon Moon (Inha University); Joshua Kang, Bryant Curto (Northeastern University); Jieung Kim (Yonsei University); Ji-Yong Shin (Northeastern University)</li>
+						</ul>
+					  </div>
+
+
+
+					  
+					  <div class="session" id="RS17">
+						<h6>RS17: Binary Analysis, at <i>Aula Magna (Centro Congressi), 14:00 - 15:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Jin Hong (The University of Western Australia, Australia)</p>
+						<ul>
+						  <li><b>BASSET: Enhancing Binary Code Clone Searching through Multi-Level Hybrid Semantic Indexing</b> by Yong Zhao (Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China); Ang Xia (State Grid Corporation of China Information and Communication Branch); Jie Yin (Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China); Zhi Wang (Zhongguancun Laboratory, Beijing, China); Yaqin Cao, Xiangyi Zeng, Yuling Liu (Institute of Information Engineering, Chinese Academy of Sciences, Beijing, China)</li>
+						  <li><b>A Human Study of Automatically Generated Decompiler Annotations</b> by Yuwei Yang, Skyler Grandel (Vanderbilt University); Jeremy Lacomis, Edward Schwartz, Bogdan Vasilescu, Claire Le Goues (Carnegie Mellon University); Kevin Leach (Vanderbilt University)</li>
+						  <li><b>Detecting Code Vulnerabilities using LLMs</b> by Larry Huynh, Yinghao Zhang, Djimon Jayasundera (The University of Western Australia); Woojin Jeon, Hyoungshick Kim (Sungkyunkwan University); Tingting Bi, Jin B. Hong (The University of Western Australia)</li>
+						</ul>
+					  </div>
+					  
+					  <div class="session" id="RS18">
+						<h6>RS18: Containers and Microservices, at <i>Aula A (Centro Congressi), 14:00 - 15:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Sibin Mohan (The George Washington University, USA)</p>
+						<ul>
+						  <li><b>Zero-Interference Containers: A Framework to Orchestrate Mixed-Criticality Applications</b> by Daniele Ottaviano (Technical University of Munich); Marco Barletta, Francesco Boccola (University of Naples Federico II, Italy)</li>
+						  <li><b>KubeFence: Security Hardening of the Kubernetes Attack Surface</b> by Carmine Cesarano, Roberto Natella (University of Naples Federico II)</li>
+						  <li><b>5G-STREAM: 5G Service Mesh Tailored for Reliable, Efficient and Authorized Microservices in the Cloud</b> by Tolga Atalay, Alireza Famili, Sudip Maitra (Virginia Tech); Dragoslav Stojadinovic (Kryptowire LLC); Angelos Stavrou, Haining Wang (Virginia Tech)</li>
+						</ul>
+					  </div>
+					  
+					  <div class="session" id="RS19">
+						<h6>RS19: Attack Modeling, at <i>Aula B (Centro Congressi), 14:00 - 15:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Clay Stevens (Iowa State University, USA)</p>
+						<ul>
+						  <li><b>Valkyrie: A Response Framework to Augment Runtime Detection of Time-Progressive Attacks</b> by Nikhilesh Singh (Technische Universität Darmstadt); Chester Rebeiro (IIT Madras)</li>
+						  <li><b>Attack-Defense Trees with Offensive and Defensive Attributes</b> by Danut-Valentin Copae, Reza Soltani, Milan Lopuhaä-Zwakenberg (University of Twente)</li>
+						  <li><b>Towards More Dependable Specifications: An Empirical Study Exploring the Synergy of Traditional and LLM-Based Repair Approaches</b> by Md Rashedul Hasan (University of Nebraska-Lincoln); Mohannad Alhanahnah (Chalmers University of Technology/Gothenburg University); Clay Stevens (Iowa State University); Hamid Bagheri (University of Nebraska-Lincoln)</li>
+						</ul>
+					  </div>
+	
+					  <div class="session" id="I5">
+						<h6>Industry 5: Security and Privacy in Emerging Technologies, at <i>Aragonese (Royal), 11:00 - 12:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Luca Porzio, Micron Technology, Italy</p>
+						<ul>
+						  <li><b>To Protect the LLM Agent Against the Prompt Injection Attack with Polymorphic Prompt</b> by Zhilong Wang (The Pennsylvania State University), Neha Nagaraja (Northern Arizona University), Lan Zhang (Northern Arizona University), Peng Liu (The Pennsylvania State University), Pawan Patil (University of Southern California), Hayretdin Bahsi (Northern Arizona University)</li>
+						  <li><b>Security-by-Design at the Telco Edge with OSS: Challenges and Lessons Learned</b> by Carmine Cesarano (Università degli Studi di Napoli Federico II), Alessio Foggia (Università degli Studi di Napoli Federico II), Gianluca Roscigno (System Management S.p.A), Luca Andreani (DigitalPlatforms S.p.A), Roberto Natella (Università degli Studi di Napoli Federico II)</li>
+						  <li><b>Bridging the Safety Gap: A C-ITS Solution for Protecting Vulnerable Road Users with DSRC/C-V2X</b> by Mario Fiorentino (SOUTH ENGINEERING SRL), Michele Caggiano (SOUTH ENGINEERING SRL), Alessandro Magliacane (SOUTH ENGINEERING SRL), Angelo Coppola (Federico II University of Naples Dept. of Civil, Building and Environmental Engineering), Andrea Marchetta (Federico II University of Naples Dept. of Civil, Building and Environmental Engineering)</li>
+						  <li><b>An Open-source Implementation and Security Analysis of Triad’s TEE Trusted Time Protocol</b> by Matthieu Bettinger (LIRIS - INSA Lyon), Sonia Ben Mokhtar (LIRIS CNRS), Anthony Simonet-Boulogne (iExec Blockchain Tech)</li>
+						  <li><b>LLMPrism: Black-box Performance Diagnosis for Production LLM Training Platforms</b> by Zhihan Jiang (The Chinese University of Hong Kong), Rui Ren (Computing and Networking Innovation Lab, Huawei Cloud Computing Technology Co., Ltd), Guangba Yu (The Chinese University of Hong Kong), Yulun Wu (The Chinese University of Hong Kong), Wenwei Gu (The Chinese University of Hong Kong), Yichen Li (The Chinese University of Hong Kong), Yujie Huang (The Chinese University of Hong Kong), Cong Feng (Computing and Networking Innovation Lab, Huawei Cloud Computing Technology Co., Ltd), Zengyin Yang (Computing and Networking Innovation Lab, Huawei Cloud Computing Technology Co., Ltd), Yongqiang Yang (Computing and Networking Innovation Lab, Huawei Cloud Computing Technology Co., Ltd), Michael R. Lyu (The Chinese University of Hong Kong)</li>
+						</ul>
+					  </div>
+
+					  
+					  <div class="session" id="I6">
+						<h6>Industry 6: System Management and Reliability, at <i>Aragonese (Royal), 14:00 - 15:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Jan Micha Borrmann, ExpectedIT GmbH, Germany</p>
+						<ul>
+						  <li><b>DDR5 DRAM Faults in the Field</b> by Majed Valad Beigi (Advanced Micro Devices, Inc), Yi Cao (Google), Grace Tsai (Google), Sudhanva Gurumurthi (Advanced Micro Devices, Inc), Vilas Sridharan (Advanced Micro Devices, Inc)</li>
+						  <li><b>KubeChecker: Detecting Configuration Bugs in Container Orchestration</b> by Yilin Sun (Fudan University), Dian Lv (Fudan University), Cheng Cui (Huawei Cloud Computing Technology Co., Ltd), Hui Xu (Fudan University)</li>
+						  <li><b>IAM Role Diet: A Scalable Approach to Detecting RBAC Data Inefficiencies</b> by Roberto Moratore (ING Bank), Eduardo Barbaro (ING Bank & TU Delft), Yury Zhauniarovich (TU Delft)</li>
+						  <li><b>Be My Guest: Welcoming Interoperability into IBC-Incompatible Blockchains</b> by Michał Nazarewicz, Dhruv D. Jain (Inclusive Layer), Miguel Matos (IST Lisbon & INESC-ID), Blas Rodriguez (Inclusive Layer)</li>
+						</ul>
+					  </div>
+
+					  <div class="session" id="FORCE_1">
+						<h6>FORCE 1: Toward Reliable and Scalable Quantum-Classical Integration, at <i>Catalana (Royal), 09:00 - 10:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Edoardo Giusto, University of Naples, Federico II</p>
+						<ul>
+						  <li><b>Keynote: Quantum computing and applications at DOE’s SQMS Quantum Research Center</b> by Silvia Zorzetti (SQMS - Fermilab)</li>
+						  <li><b>Assessing the Elephant in the Room in Scheduling for Current Hybrid HPC-QC Clusters</b> by Paolo Viviani (LINKS Foundation), Roberto Rocco (E4 Computer Engineering), Matteo Barbieri (E4 Computer Engineering), Gabriella Bettonte (E4 Computer Engineering), Elisabetta Boella (E4 Computer Engineering), Marco Cipollini (Politecnico di Torino), Jonathan Frassineti (CINECA), Fulvio Ganz (E4 Computer Engineering), Sara Marzella (CINECA), Daniele Ottaviani (CINECA), Simone Rizzo (E4 Computer Engineering), Alberto Scionti (LINKS Foundation), Chiara Vercellino (LINKS Foundation - Politecnico di Torino), Giacomo Vitali (LINKS Foundation - Politecnico di Torino), Olivier Terzo (LINKS Foundation), Bartolomeo Montrucchio (Politecnico di Torino), Daniele Gregori (E4 Computer Engineering)</li>					
+						  <li><b>A Typology of Quantum-Classical Faults</b> by Edoardo Giusto (University of Naples, Federico II), Santiago Núñez-Corrales (UIUC), Alessandro Cilardo (University of Naples Federico II), Nicola Mazzocca (University of Naples Federico II), Travis Humble (Oak Ridge National Laboratory)</li>
+						  <li><b>Near-term Application Engineering Challenges in Emerging Superconducting Qudit Processors</b> by Davide Venturelli (SQMS, NASA QuAIL & USRA), Erik Gustafson (SQMS, NASA QuAIL & USRA), Doga Kurkcuoglu (SQMS, Fermilab), Silvia Zorzetti (SQMS, Fermilab)</li>
+						</ul>
+					  </div>
+
+					  <div class="session" id="FORCE_2">
+						<h6>FORCE 2: Quantum-Enhanced Applications: Learning, Security, and Optimization in Practice, at <i>Catalana (Royal), 11:00 - 12:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Edoardo Giusto, University of Naples, Federico II</p>
+						<ul>
+						  <li><b>Keynote: Security Challenges in Hybrid Classical-Quantum Computing Systems</b> by Jakub Szefer (Northwestern University)</li>
+						  <li><b>ATTAQ: Adversarial Robustness of Quantum Machine Learning</b> by Francesco Marchiori, Mauro Conti (University of Padova)</li>
+						  <li><b>Supply Chain Malware Detection via Classical and Quantum Kernel Methods in Embedded Systems</b> by Sthefanie Passo, Vishal Kothavade, Jeff Prevost (The University of Texas at San Antonio)</li>
+						  <li><b>AI-Augmented Parameter Initialization for QAOA</b> by Jai Nana, Xinpeng Li, Ning Xie, Shusen Pu, Yifan Yu, Qiang Guan, Xiaotian Han, Shuai Xu, Vipin Chaudhary (Case Western Reserve University, Florida International University, University of West Florida, University of Washington, Kent State University)</li>
+						  <li><b>Quantum Circuit Optimization for Protein Structure Prediction</b> by Xinpeng Li, Vinooth Rao Kulkarni, Jai Nana, Shusen Pu, Ning Xie, Qiang Guan, Ruihao Li, Shulei Zhang, Shuai Xu, Daniel Blankenberg, Vipin Chaudhary (Case Western Reserve University, University of West Florida, Florida International University, Kent State University, Cleveland Clinic)</li>
+						</ul>
+					  </div>
+
+
+					  <div class="session" id="S2AIM_1">
+						<h6>S2AIM 1, at <i>Catalana (Royal), 14:00 - 15:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Davide De Vita (University of Naples Federico II, Italy)</p>
+						<ul>
+						  <li><b>Keynote: Advancing Secure & Safe IoT and Edge Computing Platforms: Lessons from LoLiPoP IoT and SuzECK projects</b> by George Violettas (SysGO GmbH)</li>
+						  <li><b>Leveraging Time-Frequency Features For Contact Classification And Regression With A Piezoelectric Tactile Skin For Robotic Fingertips</b> by Nicole Alati, Davide Bargellini, Alex Pasquali, Gianluca Palli, Roberto Meattini (Alma Mater University of Bologna, Italy), Yahya Abbass, Maurizio Valle (University of Genova, Italy)</li>
+						  <li><b>Ransomware Threats in Manufacturing Industry: Patterns based on Dark Web Telegram Groups</b> by Luis de Marcos, Adrián Dominguez Díaz, Carlos Cilleruelo, Daniel Rodriguez (University of Alcalá, Spain)</li>
+						  <li><b>Human-AI interaction implementation in consolidate digital environments through a collaborative and multidisciplinary design approach</b> by Michele Zannoni, Virginia Vignali (Alma Mater University of Bologna, Italy)</li>
+						</ul>
+					  </div>
+					  
+					  
+					  
+					  <div class="session" id="S2AIM_2">
+						<h6>S2AIM 2, at <i>Catalana (Royal), 16:00 - 17:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Virginia Vignali (Alma Mater University of Bologna, Italy)</p>
+						<ul>
+						  <li><b>Orchestration of Sustainable Mixed-Criticality Systems over Heterogenous Edge Nodes</b> by Francesco Boccola, Marcello Cinque, Luigi De Simone, Davide De Vita, Nike Di Giacomo (University of Naples Federico II, Italy)</li>
+						  <li><b>Robot Situation and Task Awareness using Large Language Models and Ontologies</b> by Victor Molina, Oriol Ruiz-Celada, Raul Suarez, Jan Rosell, Isiah Zaplana (Universitat Politècnica de Catalunya - BarcelonaTech, Spain)</li>
+						  <li><b>Experimental Evaluation Of A User-Centered Unilateral Telemanipulation System For Training And Control In Robotic Industrial Scenarios</b> by Mattia Tafuri, Davide Chiaravalli, Mona Saber Gharamaleki, Claudio Melchiorri, Gianluca Palli, Roberto Meattini (Alma Mater University of Bologna, Italy)</li>
+						</ul>
+					  </div>
+
+				</div>
+
 			</div>
 		</div>
 
@@ -1722,6 +2464,28 @@
 			<img id="venue_image" src="images/floorplan/webp/day_1.webp" loading="lazy" alt="Day 1 Floorplan" width="90%" class="img-fluid rounded shadow">
 			
 		</div>
+
+		<div id="full_program_images" class="container d-none mt-4">
+			<div class="row">
+			  <div class="col-6 position-relative mb-3">
+				<img src="images/floorplan/webp/day_1.webp" class="img-fluid rounded shadow">
+				<div class="caption-overlay">June 23</div>
+			  </div>
+			  <div class="col-6 position-relative mb-3">
+				<img src="images/floorplan/webp/day_2.webp" class="img-fluid rounded shadow">
+				<div class="caption-overlay">June 24</div>
+			  </div>
+			  <div class="col-6 position-relative mb-3">
+				<img src="images/floorplan/webp/day_3.webp" class="img-fluid rounded shadow">
+				<div class="caption-overlay">June 25</div>
+			  </div>
+			  <div class="col-6 position-relative mb-3">
+				<img src="images/floorplan/webp/day_4.webp" class="img-fluid rounded shadow">
+				<div class="caption-overlay">June 26</div>
+			  </div>
+			</div>
+		  </div>
+		  
 
         <div id="footer-container"></div>
             <script>
@@ -1819,18 +2583,25 @@
 		tabLinks.forEach(tab => {
 			tab.addEventListener('shown.bs.tab', (event) => {
 			const targetId = event.target.getAttribute('data-bs-target').substring(1); // "day1", "day2", etc.
-			const pdfFile = tabToPdfMap[targetId];
 	
-			if (pdfFile) {
-				const imageEl = document.getElementById('venue_image');
-				
+			const imageEl = document.getElementById('venue_image');
+			const fullProgramContainer = document.getElementById('full_program_images');
+	
+			if (targetId === 'full_program') {
+				imageEl.classList.add('d-none');
+				fullProgramContainer.classList.remove('d-none');
+			} else {
+				const pdfFile = tabToPdfMap[targetId];
+				if (pdfFile) {
 				imageEl.src = `images/floorplan/webp/${pdfFile}`;
-				
+				imageEl.classList.remove('d-none');
+				fullProgramContainer.classList.add('d-none');
+				}
 			}
 			});
 		});
 		});
-  	</script>
+	</script>
   
 
 </body>
