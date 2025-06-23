@@ -105,6 +105,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 }
 
 
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+
 </style>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -167,8 +187,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <p>Welcome to the city home of the football club that won the championship this year. SSC Napoli is the club where Maradona played and won in the eighties, and winning ag4in in our times, after so many years, it’s a big deal for all neapolitans, not only football supporters. </p>
 
   <div class="w3-center">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dwI8CbQTpAM?si=9s4bxTOsuKYPW2F-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/dwI8CbQTpAM?si=9s4bxTOsuKYPW2F-" title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
+</div>
   
   <p>Welcome to DSN 2025, the 55th edition of the premier conference on Dependable Systems and Networks. It is an honor for us to host the conference in Napoli for the first time in its history, coming back to Italy after 21 years. The program this year is particularly rich. We did our best to make your experience memorable, while enjoying the many sessions and networking opportunities available. We truly hope you will find the time to also experience the vibrant culture and the mix of historical and contemporary character of  Napoli, including its famous food, charming narrow streets, unique sea-side sightseeing, and welcoming people.</p>
     
